@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>SEO vs A11Y</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@shower/ribbon/styles/styles.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>SEO vs A11Y</h1>
+      <p>Сергей Раздолянский, VMGR</p>
+    </header>
+
+    <section class="slide slide--not-top slide--fl-center not-num">
+      <h1 class="title title__main title__big separate">SEO <span class="select-text">vs</span> A11Y</h1>
+      <p>или как постараться всем угодить</p>
+      <div class="sr-main">
+        <img src="img/frontpoter.svg" alt="">
+        <span>Сергей Раздолянский <br> @frontpoterashka</span>
+      </div>
+      <div class="a11y-minsk">
+        <span>Accessibility <br>  Club Minsk</span>
+        <img src="img/A11yclub.svg" alt="">
+      </div>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Кто я?</h1>
+      <div class="fl-bl-50">
+        <div class="profile-img__wrapp">
+          <img class="profile-img" src="/img/profile-photo.png" alt="" />
+        </div>
+        <div>
+          <ul class="list-slash">
+            <li>Frontend разработчик</li>
+            <li>Занимался SEO около года</li>
+            <li>Увлекаюсь доступностью</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">О чем сегодня поговорим</h1>
+      <ol class="list-left">
+        <li class="next">Что такое SEO и как его готовить</li>
+        <li class="next">A11Y и как её подружить с SEO</li>
+        <li class="next">Рассмотрим все на примере</li>
+        <li class="next">Рассмотрим угловые случаи</li>
+        <li class="next">Сравним и сделаем небольшие выводы</li>
+      </ol>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide title--big separate">SEO</h1>
+      <p>
+        SEO (Search Engine Optimization, поисковая оптимизация) — комплекс
+        мер по внутренней и внешней оптимизации для поднятия позиций сайта
+        в результатах поисковой выдачи, с целью увеличения трафика и потенциальных  
+        клиентов.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide title--big separate">A11Y</h1>
+      <p>
+        Доступность (accessibility) — это набор требований, методов и технологий разработки интерфейсов, которые делают их доступными для всех пользователей.
+      </p>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <p class="pure-text bold-text">SEO</p>
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <td></td>
+            <td class="pure-text bold-text">SEO</td>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td class="yellow-text">Цель</td>
+            <td>Зарабарывать деньги и смотреть метрику</td>
+          </tr>
+          <tr>
+            <td class="yellow-text">Показатели</td>
+            <td>Аналитики и Метрики</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="pure-text bold-text">A11Y</p>
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <td></td>
+            <td class="pure-text bold-text">A11Y</td>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td class="yellow-text">Цель</td>
+            <td>Делать контент доступным для всех</td>
+          </tr>
+          <tr>
+            <td class="yellow-text">Показатели</td>
+            <td>Удобство UI/UX</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate separate--pure">Основа SEO</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Семантическое ядро</h1>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Семантическое ядро сайта <span class="normal-text">(СЯ)</span></h1>
+      <p>
+        Упорядоченный набор слов, их морфологических форм и словосочетаний, которые наиболее точно характеризуют вид деятельности, товары или услуги, предлагаемые сайтом.
+      </p>
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center" >
+        <div style="position: relative; display: flex; max-height: 100%; max-width: 100%; align-items: center; justify-content: center;">
+            <img class="img--full-h100" src="/img/se-main-seo-2.png" alt="" />
+            <div class="next" style="position: absolute;border: 2px solid red;width: 350px;height: 57%;left: 50%;top: 50%;transform: translate(-100%, -50%);margin-top: 55px;margin-left: 27px;"></div>
+        </div>
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center" >
+        <div style="position: relative; display: flex; max-height: 100%; max-width: 100%; align-items: center; justify-content: center;">
+            <img class="img--full-h100" src="/img/se-main-seo-2.png" alt="" />
+            <div class="next" style="position: absolute;border: 2px solid red;width: 275px;height: 57%;left: 50%;top: 50%;transform: translate(0%, -50%);margin-top: 55px;margin-left: 27px;"></div>
+        </div>
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+      <img class="img--full" src="/img/se-detail-new.png" alt="" />
+      <div class="next" style="position: absolute;border: 2px solid red;width: 443px;height: 69%;left: 50%;top: 50%;transform: translate(-100%, -50%);margin-top: 55px;margin-left: -6px;"></div>
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+        <img class="img--full" src="/img/se-detail-new.png" alt="" />
+        <div class="next" style="position: absolute;border: 2px solid red;width: 461px;height: 69%;left: 50%;top: 50%;transform: translate(0%, -50%);margin-top: 55px;margin-left: 6px;"></div>
+    </section>
+
+    <section class="slide slide--not-pd slider-num-bg slide--fl-center">
+      <img class="img--full" src="/img/gtrends.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-pd slider-num-bg slide--fl-center">
+      <img class="img--full" src="/img/wordstats.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate separate--pure">Практики на примере</h1>
+    </section>
+
+    <section class="slide slide--not-pd opacity-num slide--fl-center">
+      <img class="img--full" src="/img/iphone12ru.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Мета теги и title</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <p>
+        <span class="yellow-text">Мета-теги</span> — часть HTML-кода, заключенная между тегом <span><</span>head>...<span><</span>/head>. Эти атрибуты не являются обязательными: они не видны пользователю, но сообщают определенную информацию поисковой системе (описание, заголовок, ключевые слова и т.д.).
+      </p>
+    </section>
+
+    <section class="slide slide--fl-center">
+      <img class="img--full" src="/img/meta-apple-dev.png" alt="" style="margin: -45px -20px 0; max-width: 120%;" />
+      <div class="next" style="position: absolute;border: 2px solid red;width: 80%;height: 40%;left: 50%;top: 50%;transform: translate(-50%, -50%);margin-top: 7px;margin-left: -35px;"></div>
+    </section>
+
+
+    <section class="slide ">
+      <p><span class="yellow-text">Title (46):</span> Купить iPhone 12 и iPhone 12 mini - Apple (RU)</p>
+      <p><span class="yellow-text">Description (90):</span> Apple представляет новые iPhone 12 и iPhone 12 mini. Купите онлайн с бесплатной доставкой.</p>
+      <p><span class="yellow-text">Keywords (0):</span></p>
+    </section>
+
+    <section class="slide slide--fl-center">
+      <img class="img--full" src="/img/meta.png" alt="" style="margin-top: -45px;" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">H-tags</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img
+        class="img--full img--full-h100"
+        style="max-height: 90%;"
+        src="/img/h2-empty.png"
+        alt=""
+      />
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img
+        class="img--full img--full-h100"
+        src="/img/h2-empty-apple.jpg"
+        alt=""
+      />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img
+                class="img--full"
+                style="max-height: 90%;"
+                src="/img/seo-meta-pluging.png"
+                alt=""
+        />
+        <a style="margin-top: -30px; line-height: 1.2" class="common-href" href="https://chrome.google.com/webstore/detail/meta-seo-inspector/ibkclpciafdglkjkcibmohobjkcfkaef">Ссылка на расширение</a>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Заспамленность</h1>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Заспамленность текста</h1>
+      <p>
+        Это соотношение содержащихся в статье повторяющихся слов к ее объему.
+        Чем чаще употребляются одни и те же слова или фразы (обычно речь идет о
+        ключевых запросах), тем выше значение. Данный параметр учитывают
+        поисковые боты при определении качества контента.
+      </p>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img class="img--full img--full-h100" src="/img/text-new-seo.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Ссылки</h1>
+      <ol class="list-left">
+        <li>
+          <a class="common-href" href="https://be1.ru/vfacen/">
+            be1.ru</a
+          >
+        </li>
+        <li>
+          <a class="common-href" href="https://advego.com/text/seo/"
+            >advego.com</a
+          >
+        </li>
+          <li>
+              <a class="common-href" href="https://www.niemanlab.org/2020/11/propublica-experiments-with-ultra-accessible-plain-language-in-stories-about-disabilities/"
+              >ProPublica experiments with ultra-accessible plain language in stories about people with disabilities</a
+              >
+          </li>
+      </ol>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Alt</h1>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Alt images</h1>
+      <p>
+        Атрибут alt устанавливает альтернативный текст для изображений. Такой
+        текст позволяет получить текстовую информацию о рисунке.
+      </p>
+    </section>
+
+    <section class="slide" style="display: flex; justify-content: center; align-items: center;">
+        <p style="font-size: 32px">document.<span style="color: rgb(207,191,103)">querySelectorAll</span>(<span style="color: rgb(214,135,90)">'img:not(alt)'</span>)</p>
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+      <img class="img--full" src="/img/not-alt-new.png" alt="" />
+      <div class="next" style="position: absolute;border: 2px solid red;width: 250px;height: 20px;left: 50%;bottom: 0;transform: translate(50%, -50%);margin-bottom: 42px;margin-left: -60px;"></div>
+    </section>
+
+    <section class="slide slide--fl-center">
+        <img class="img--full img--full-h100" src="/img/alt-plug.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+        <img class="img--full" src="/img/alt-plug-full.png" alt="" />
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img
+                class="img--full"
+                style="max-height: 90%;"
+                src="/img/web-dev.png"
+                alt=""
+        />
+        <a style="margin-top: -20px; line-height: 1.2" class="common-href" href="https://chrome.google.com/webstore/detail/meta-seo-inspector/ibkclpciafdglkjkcibmohobjkcfkaef">Ссылка на расширение</a>
+    </section>
+
+    <section class="slide slide--fl-center">
+      <img class="img--full" src="/img/bad-alt.png" alt="" />
+    </section>
+
+    <section class="slide slide--fl-center">
+      <img class="img--full" src="/img/good-alt.png" alt="" />
+    </section>
+
+    <section class="slide">
+        <h1 class="title title-slide separate">Ссылки</h1>
+        <ol class="list-left">
+            <li>
+                <a class="common-href" href="http://diagramcenter.org/table-of-contents-2.html#toc">
+                    Image Description Guidelines</a
+                >
+            </li>
+            <li>
+                <a class="common-href" href="https://seo-akademiya.com/baza-znanij/vnutrennyaya-optimizacziya/atributyi-alt-i-title/"
+                >Атрибуты alt и title в роли помощников по оптимизации</a
+                >
+            </li>
+        </ol>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Google PageSpeed</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <div class="fl-bl-50">
+        <img class="img--50" src="/img/gps-mob12.png" alt="" />
+        <img class="img--50" src="/img/gps-desc12.png" alt="" />
+      </div>
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
+        <video style="width: 100%" controls="" loop="" muted="" class="w-screenshot" poster="video-image-dimensions.jpg">
+            <source src="https://storage.googleapis.com/web-dev-assets/optimize-cls/image-dimensions.webm" type="video/webm">
+            <source src="https://storage.googleapis.com/web-dev-assets/optimize-cls/image-dimensions.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <video style="width: 100%" controls="" loop="" muted="" class="w-screenshot" poster="video-image-dimensions-fixed.jpg">
+            <source src="https://storage.googleapis.com/web-dev-assets/optimize-cls/image-dimensions-fixed.webm" type="video/webm">
+            <source src="https://storage.googleapis.com/web-dev-assets/optimize-cls/image-dimensions-fixed.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Полезные ссылки по Google PageSpeed</h1>
+      <ol class="list-left">
+        <li>
+          <a class="common-href" href="https://wsd.events/2019/07/13/pres/pagespeed-happy.pdf">
+            Как (не)удовлетворить Google PageSpeed (Даниил Крохмаль)</a
+          >
+        </li>
+        <li>
+          <a class="common-href" href="https://web.dev/vitals/"
+            >Web Vitals (web.dev)</a
+          >
+        </li>
+          <li>
+              <a class="common-href" href="https://www.youtube.com/watch?v=681ubR87iLw"
+              >Web Vitals - метрики здорового сайта (Андрей Липатцев)</a
+              >
+          </li>
+      </ol>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">SSR</h1>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Server Side Rendering</h1>
+      <p>
+        SSR (Server-Side Rendering, серверный рендеринг) — рендеринг на сервере клиентской части или универсального приложения в HTML;
+      </p>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <div class="front__list">
+        <img class="front-logo" src="/img/react.svg" alt="" />
+        <img class="front-logo" src="/img/angular.png" alt="" />
+        <img class="front-logo" src="/img/vue.png" alt="" />
+        <img class="front-logo" src="/img/svetle.png" alt="" />
+      </div>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img class="img--full img--full-h100" src="/img/disable-js.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img class="img--full img--full-h100" src="/img/ssr-empty.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img class="img--full img--full-h100" src="/img/ssr-apple.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate separate--pure">Критерии SEO</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Индексация</h1>
+    </section>
+
+
+    <section class="slide">
+      <h1 class="title title-slide separate">Способы</h1>
+      <ol class="list-left">
+        <li>
+          robots.txt
+        </li>
+        <li>
+          Мета тег robots
+        </li>
+      </ol>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">robots.txt</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <p>
+        <span class="yellow-text">robots. txt</span> — специальный файл, который содержит инструкции для
+        поисковых роботов. Он должен размещаться в корневой папке сайта.
+      </p>
+    </section>
+
+    <section class="slide slide--fl-center">
+      <img class="img--full img--full-h100" src="/img/robots.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Мета тег robots</h1>
+      <p><<span></span>meta name="robots" content="noindex" /></p>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img
+        class="img--full img--full-h100"
+        src="/img/robots-apple.jpg"
+        alt=""
+      />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <img
+                class="img--full"
+                style="max-height: 90%;"
+                src="/img/arsenrin.png"
+                alt=""
+        />
+        <a style="margin-top: -30px; line-height: 1.2" class="common-href" href="https://arsenkin.ru/tools/bookmarklet/">arsenkin.ru</a>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+        <video style="width: 100%" controls="" loop="" muted="" class="w-screenshot">
+            <source src="/img/arsenkin.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Сanonical</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <p>
+        <span class="yellow-text">rel canonical</span> — это тег, который сообщает поисковикам, какую из
+        одинаковых страниц считать дополнительной, а какую основной. Все
+        характеристики дополнительной страницы (ссылочный вес, поведение
+        пользователей) передадутся основной странице.
+      </p>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <div class="fl-bl-50">
+        <img class="img--50" src="/img/ym-stock.png" alt="" />
+        <img class="img--50" src="/img/ym-deff.png" alt="" />
+      </div>
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate">Редиректы</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <p>
+        <span class="yellow-text">Редирект</span> — перенаправление пользователя с одной страницы на другую (с
+        одного URL на другой). Редиректы могут перенаправлять посетителей как на
+        страницы того же сайта, так и на страницы другого сайта.
+      </p>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img class="img--full" src="/img/redirect.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate separate--pure">Угловые случаи</h1>
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center">
+      <div class="fl-bl-50">
+        <img style="margin: 0;" class="img--50" src="/img/alt-v2.png" alt="" />
+        <img style="margin: 0;" class="img--50" src="/img/alt-v2-2.png" alt="" />
+      </div>
+    </section>
+    
+    <section class="slide slide--not-pd slide--fl-center">
+      <div class="fl-bl-50">
+        <img style="margin: 0;" class="img--50" src="/img/label-v4-2.png" alt="" />
+        <img style="margin: 0;" class="img--50" src="/img/label-v4.png" alt="" />
+      </div>
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center">
+      <div class="fl-bl-50">
+        <img style="margin: 0;" class="img--50" src="/img/simple-href-new.png" alt="" />
+        <img style="margin: 0;" class="img--50" src="/img/simple-href-2-new.png" alt="" />
+      </div>
+    </section>
+
+    <section class="slide slide--not-pd opacity-num slide--fl-center slider-num-bg">
+      <img class="img--full" src="/img/color-apple-new.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img class="img--50 img--full-h100" src="/img/control-color.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center slider-num-bg">
+        <img class="img--full-h100" src="/img/spoler-apple-new.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate separate--pure">Бонус</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title">SEO <span class="pure-text">is</span> Dead</h1>
+    </section>
+
+    <section class="slide slide--not-pd opacity-num slide--fl-center">
+        <img class="img--full" style="width: 100%; height: 100%; object-fit: cover" src="/img/seo-dead-new.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+      <img class=" img--full-h100" src="/img/seo-dead.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+      <img class="img--full-h100" src="/img/seo-dead-google.jpg" alt="" />
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+        <img class="img--full-h100" src="/img/google-no-comer.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-pd slide--fl-center slider-num-bg">
+        <img class=" img--full-h100" src="/img/yandex-no-comer.png" alt="" />
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title separate separate--pure">Выводы</h1>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title">SEO <span class="pure-text">+</span> A11Y <span class="yellow-text">=</span> ❤️</h1>
+    </section>
+
+    <section class="slide">
+      <h1 class="title title-slide separate">На что обратить внимание</h1>
+      <ol class="list-left">
+        <li class="next">Title, Description, h1</li>
+        <li class="next">Качество текста</li>
+        <li class="next">Alt к картинкам</li>
+        <li class="next">Perfomance</li>
+      </ol>
+    </section>
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title" style="text-align: center;">Не пытайтесь сделать все сразу,<br> делайте поэтапно</h1>
+    </section>
+
+    <!-- <section class="slide">
+      <h1 class="title title-slide separate">Что можно посмотреть еще?</h1>
+      <ul class="list-left">
+        <li>Микроразметка</li>
+        <li>Цитируемость</li>
+      </ul>
+    </section> -->
+
+
+    <!-- <section class="slide slide">
+      <h1 class="title title-slide separate">Если любите книги</h1>
+      <div class="fl-bl-50">
+        <img style="max-height: 300px" src="/img/a11y-book.jpg" alt="" />
+        <img style="max-height: 300px" src="/img/seo-book.webp" alt="" />
+      </div>
+    </section> -->
+
+    <section class="slide slide--not-top slide--fl-center">
+      <img class="logo-tiwtter" src="/img/frontpoter.svg" alt="">
+      <h1 class="title">@frontpoterashka</h1>
+    </section>
+
+
+    <section class="slide slide--not-top slide--fl-center">
+      <h1 class="title title--big">Cпасибо!</h1>
+      <img class="logo-tiwtter" src="/img/qr-link.svg" alt="">
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Сделано в Shower</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+  </body>
+</html>
